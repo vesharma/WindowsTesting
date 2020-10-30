@@ -40,3 +40,12 @@ Add-Member -inputObject $infoObject -memberType NoteProperty -name "SharesName" 
 Add-Member -inputObject $infoObject -memberType NoteProperty -name "SharesPath" -value $Shares.Path
 
 $infoObject} | Select-Object * -ExcludeProperty PSComputerName, RunspaceId, PSShowComputerName | Export-Csv -path $outreport -NoTypeInformation
+
+
+
+
+#Add Firewall
+# looking for registry
+# looking for services
+# looking for tls
+
